@@ -72,6 +72,7 @@ def save_bottlebeck_features():
 
     # build the VGG16 network
     model = applications.VGG16(include_top=False, weights='imagenet')
+    ##################################################################
 
     generator = datagen.flow_from_directory(
         train_data_dir,
